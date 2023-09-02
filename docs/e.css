@@ -13,14 +13,15 @@ body {
 	margin:0;
 }
 
+
 .equal-gradient {
-	background: -webkit-linear-gradient(315deg,#092e3e -2.82%,#873c24 108.06%);
+	background: -webkit-linear-gradient(left, #f0a, #90f);
 }
 
 .equal-gradient-white {
-    background: -webkit-linear-gradient(315deg,#092e3e -2.82%,#873c24 108.06%) !important;
+    background: -webkit-linear-gradient(left, #f0a, #90f) !important;
     color: white !important;
-	font-family: ;
+    font-family: ;
 }
 
 body {
@@ -58,7 +59,7 @@ h1, h2 {
 }
 
 h1 span, h2 span {
-	background: -webkit-linear-gradient(top,	#89f 40%, #329);
+	background: -webkit-linear-gradient(top, #89f 40%, #329);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -169,10 +170,12 @@ button.btn-max {
 	grid-template-columns: max-content auto;
 }
 
+/*
 #nft-amt, #nft-offer {
 	font-size: 1.5em;
 	margin: 0;
 }
+*/
 
 .nft-amt-nums {
 	position: relative;
@@ -252,7 +255,8 @@ textarea:focus, input:focus {
 
 #nft-sel {
 	font-size: 0.8em;
-	padding: 5px
+	padding: 5px;
+	width:95%;
 }
 
 #cw_og {
@@ -554,10 +558,12 @@ textarea:focus, input:focus {
 		top: -32px;
 }
 
+	/*
 	#nft-amt, #nft-offer {
 		font-size: 2.5em;
 		margin: 0;
 	}
+	*/
 
 	.nft-amt-nums {
 		position: relative;

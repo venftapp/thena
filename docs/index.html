@@ -48,7 +48,7 @@
 	<div class="mechanism">
 		<div class="mechanism-subtitle">
 			<h2>For THE Lenders</h2>
-			<i>Earn passive income from veNFTs without locking your THE!</i>
+			<i>Earn passive income without locking your THE with yield from veNFTs of others!</i>
 		</div>
 
 		<br><br>
@@ -84,12 +84,57 @@
 
 	</div>
 
+
+
+	<br><br><br><br>
+
+	<div class="mechanism">
+		<div class="mechanism-subtitle">
+			<h2>For THE Borrowers</h2>
+			<i>Take out an interest-free liquid THE Loan against your locked veTHE NFT without selling and while still earning from your veNFT!</i>
+		</div>
+
+		<br><br>
+		<div class="two-pane-auto">
+			<div>APY : <span id="tvl-lend">0.00%</span></div>
+			<div>TVL : <span id="tvl-lend">$0.00</span></div>
+		</div>
+		<div class="hr-nft"></div>
+
+		<div class="two-pane-mech">
+			<div style="margin: auto 10px;">
+				<h3><img src="https://ftm.guru/icons/the.png" height="20px" style="vertical-align:bottom"> Deposit veTHE</h3>
+				<span id="nft-bal">0 veTHE</span> veNFTs available
+				<br>
+				<select class="equal-gradient" id="nft-sel" onchange="quote()">
+					<option value="" selected>Choose a NFT</option>
+				</select>
+				<div class="two-pane-auto">
+					<button onclick="pledge()" class="btn2"> Pledge for <span id="nft-offer">0 XveTHE</span> </button>
+				</div>
+			</div>
+			<div style="margin: auto 10px;">
+				<h3><img src="https://ftm.guru/icons/the.png" height="20px" style="vertical-align:bottom"> Redeem XveTHE</h3>
+				<span id="avl-call">0 XveTHE</span> available
+				<br>
+				<input id="inp-call" class="inp2" placeholder="Amount to Call">
+				<div class="two-pane-auto">
+					<button onclick="lend()" class="btn2"> Withdraw </button>
+					<button onclick="lendAll()" class="btn2"> Call All </button>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
 	<br><br><br><br>
 
 
 
 
-	<div class="mechanism">
+	<div class="mechanism" style="display:none">
 		<div class="amount">
 			<br>
 			<div align="center">
@@ -137,7 +182,7 @@
 			<br><br>
 		</div>
 	</div>
-	<div class="analytics">
+	<div class="analytics" style="display:none">
 		<a class="equal-gradient-white">Mint</a>
 		<a href="staking">Stake</a>
 		<a href="https://dune.com/eliteness/ethena" target="_blank">Analytics</a>
