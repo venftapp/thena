@@ -487,7 +487,11 @@ textarea:focus, input:focus {
 }
 .two-pane-auto {
 	display:grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto;
+}
+.two-pane-50-50 {
+	display:grid;
+	grid-template-columns: auto;
 }
 
 .btn2 {
@@ -625,6 +629,16 @@ textarea:focus, input:focus {
 	.two-pane-mech {
 		display:grid;
 		grid-template-columns: 50% auto;
+	}
+
+	.two-pane-auto {
+		display:grid;
+		grid-template-columns: auto auto;
+	}
+
+	.two-pane-50-50 {
+		display:grid;
+		grid-template-columns: auto auto;
 	}
 
 }

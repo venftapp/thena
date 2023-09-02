@@ -52,9 +52,9 @@
 		</div>
 
 		<br><br>
-		<div class="two-pane-auto">
-			<div>APY : <span id="tvl-lend">0.00%</span></div>
-			<div>TVL : <span id="tvl-lend">$0.00</span></div>
+		<div class="two-pane-50-50">
+			<div>Lending APY : <span id="met-lend-apy">0.00%</span></div>
+			<div>THE Deposits : <span id="met-lend-tvl">$0.00</span></div>
 		</div>
 		<div class="hr-nft"></div>
 
@@ -90,14 +90,14 @@
 
 	<div class="mechanism">
 		<div class="mechanism-subtitle">
-			<h2>For THE Borrowers</h2>
-			<i>Take out an interest-free liquid THE Loan against your locked veTHE NFT without selling and while still earning from your veNFT!</i>
+			<h2>For veTHE </h2>
+			<i>Leverage your ordinary veTHE NFT with the power of XveTHE Collateral to amplify your returns! </i>
 		</div>
 
 		<br><br>
-		<div class="two-pane-auto">
-			<div>APY : <span id="tvl-lend">0.00%</span></div>
-			<div>TVL : <span id="tvl-lend">$0.00</span></div>
+		<div class="two-pane-50-50">
+			<div>Rewards APY : <span id="met-ple-apy">0.00%</span></div>
+			<div>Total Corpus : <span id="met-ple-tvl">$0.00</span></div>
 		</div>
 		<div class="hr-nft"></div>
 
@@ -119,9 +119,51 @@
 				<br>
 				<input id="inp-call" class="inp2" placeholder="Amount to Call">
 				<div class="two-pane-auto">
-					<button onclick="lend()" class="btn2"> Withdraw </button>
-					<button onclick="lendAll()" class="btn2"> Call All </button>
+					<button onclick="redeem()" class="btn2"> Redeem as veNFT </button>
+					<button onclick="redeemAll()" class="btn2"> Redeem All </button>
 				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+
+	<br><br><br><br>
+
+	<div class="mechanism">
+		<div class="mechanism-subtitle">
+			<h2>For THE Borrowers</h2>
+			<i>Take out an interest-free liquid THE Loan against your locked veTHE NFT without selling and while still earning from your veNFT!</i>
+		</div>
+
+		<br><br>
+		<div class="two-pane-50-50">
+			<div>Liquidity : <span id="tvl-lend">$0.00</span></div>
+			<div>Margin (LTV) : <span id="tvl-lend">50%</span></div>
+		</div>
+		<div class="hr-nft"></div>
+
+		<div class="two-pane-mech">
+			<div style="margin: auto 10px;">
+				<h3><img src="https://ftm.guru/icons/the.png" height="20px" style="vertical-align:bottom"> Borrow THE</h3>
+				<span id="nft-bal">0 THE</span> borrowable
+				<br>
+				<input id="inp-borrow" class="inp2" placeholder="Amount to Borrow">
+				<div class="two-pane-auto">
+					<button onclick="borrow()" class="btn2"> Borrow THE </button>
+					<button onclick="borrowMax()" class="btn2"> Borrow Max </button>
+				</div>
+			</div>
+			<div style="margin: auto 10px;">
+				<h3><img src="https://ftm.guru/icons/the.png" height="20px" style="vertical-align:bottom"> Repay your Loans </h3>
+				<span id="avl-repay-borr">0 THE</span> borrowed
+				<br>
+				<span id="avl-repay-coll">0 XveTHE</span> collateralized
+				<br>
+				<button onclick="repay()" class="btn2"> Repay All Debts </button>
 			</div>
 		</div>
 
