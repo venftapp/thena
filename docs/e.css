@@ -72,7 +72,7 @@ h2 {
 	color: white;
 	font-weight: normal;
 	margin-top: 25px;
-	font-size: 0.75em
+	font-size: 1em;
 }
 
 .mechanism {
@@ -477,9 +477,9 @@ textarea:focus, input:focus {
 	text-align: center;
 }
 
-.two-pane {
+.two-pane-mech {
 	display:grid;
-	grid-template-columns: 50% auto;
+	grid-template-columns: auto;
 }
 .two-pane-auto {
 	display:grid;
@@ -613,6 +613,12 @@ textarea:focus, input:focus {
 	.topnav {
 		display:grid;
 		grid-template-columns:auto max-content;
+	}
+
+
+	.two-pane-mech {
+		display:grid;
+		grid-template-columns: 50% auto;
 	}
 
 }
